@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Web Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">```
+
 </head>
 
 <body>
@@ -44,21 +46,47 @@
 
     <h2>Job Opportunities</h2>
     <div id="jobs">
-        <div>
-            <a href="mailto:piotr@mailtrap.io?subject=FrontEnd" class="apply" target="_blank">Apply</a>
-            <h3 class="job role">Frontend Developer</h3>
-            <div class="location">Bengaluru, India</div>
-        </div>
-        <div>
-            <a href="mailto:piotr@mailtrap.io?subject=Backend" class="apply" target="_blank">Apply</a>
-            <h3 class="job role">Backend Developer</h3>
-            <div class="location">Delhi, India</div>
-        </div>
-        <div>
-            <a href="mailto:piotr@mailtrap.io?subject=Data scients" class="apply" target="_blank">Apply</a>
-            <h3 class="job role">Data Scientist</h3>
-            <div class="location">Mumbai, India</div>
-        </div>
+        <table  id="jobs-table">
+            <tr class="jobs-header-row">
+              <th rowspan="2">  Job Title </th>
+              <th colspan="2"> Location </th>
+              <th rowspan="2"> Salary </th>
+              <th rowspan="2"> Posted On </th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+
+            <tr class="jobs-data-row">
+              <td> Frontend Developer</td> 
+               <td> Bengaluru</td>
+               <td>India</td>
+                <td>₹12,00,000</td> 
+               <td> Mar 3, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td> Full Stack Developer</td> 
+                 <td>New Delhi </td>
+                 <td>India</td>
+                  <td>₹15,00,000</td> 
+                 <td> Feb 1, 2023</td>
+              </tr>
+
+              <tr class="jobs-data-row">
+                <td> Data Scientist</td> 
+                 <td>San Francisco</td>
+                 <td>USA </td>
+                  <td>$175,000</td> 
+                 <td>Dec 22, 2022</td>
+              </tr>
+              <tr class="jobs-data-row">
+                <td> Machine Learning Engineer</td> 
+                 <td colspan="2">Remote </td>
+                  <td>$80,000</td> 
+                 <td>Sep 19, 2022</td>
+              </tr>
+        </table>
     </div>
 
 
