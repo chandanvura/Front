@@ -46,12 +46,12 @@
 
     <h2>Job Opportunities</h2>
     <div id="jobs">
-        <table  id="jobs-table">
+        <table id="jobs-table">
             <tr class="jobs-header-row">
-              <th rowspan="2">  Job Title </th>
-              <th colspan="2"> Location </th>
-              <th rowspan="2"> Salary </th>
-              <th rowspan="2"> Posted On </th>
+                <th rowspan="2"> Job Title </th>
+                <th colspan="2"> Location </th>
+                <th rowspan="2"> Salary </th>
+                <th rowspan="2"> Posted On </th>
             </tr>
             <tr class="jobs-header-row">
                 <th>City</th>
@@ -59,35 +59,63 @@
             </tr>
 
             <tr class="jobs-data-row">
-              <td> Frontend Developer</td> 
-               <td> Bengaluru</td>
-               <td>India</td>
-                <td>₹12,00,000</td> 
-               <td> Mar 3, 2023</td>
+                <td> Frontend Developer</td>
+                <td> Bengaluru</td>
+                <td>India</td>
+                <td>₹12,00,000</td>
+                <td> Mar 3, 2023</td>
             </tr>
             <tr class="jobs-data-row">
-                <td> Full Stack Developer</td> 
-                 <td>New Delhi </td>
-                 <td>India</td>
-                  <td>₹15,00,000</td> 
-                 <td> Feb 1, 2023</td>
-              </tr>
+                <td> Full Stack Developer</td>
+                <td>New Delhi </td>
+                <td>India</td>
+                <td>₹15,00,000</td>
+                <td> Feb 1, 2023</td>
+            </tr>
 
-              <tr class="jobs-data-row">
-                <td> Data Scientist</td> 
-                 <td>San Francisco</td>
-                 <td>USA </td>
-                  <td>$175,000</td> 
-                 <td>Dec 22, 2022</td>
-              </tr>
-              <tr class="jobs-data-row">
-                <td> Machine Learning Engineer</td> 
-                 <td colspan="2">Remote </td>
-                  <td>$80,000</td> 
-                 <td>Sep 19, 2022</td>
-              </tr>
+            <tr class="jobs-data-row">
+                <td> Data Scientist</td>
+                <td>San Francisco</td>
+                <td>USA </td>
+                <td>$175,000</td>
+                <td>Dec 22, 2022</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td> Machine Learning Engineer</td>
+                <td colspan="2">Remote </td>
+                <td>$80,000</td>
+                <td>Sep 19, 2022</td>
+            </tr>
         </table>
     </div>
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+
+        <form action="process-form.php" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+
+    </div>
+
 
 
     <div id="footer">
@@ -113,13 +141,3 @@
 </body>
 
 </html>
-
-<!-- The following topics were covered in this tutorial:
-
-- Creating an HTML file, adding code into it using VS Code, and viewing it in a browser
-- Using basic HTML tags (html, head, title, body, div etc.) to create a web page
-- Using HTML tags (h1 to h6, p, lists, link, images) to structure content on a page
-- Styling HTML tags using CSS and replicating the structure of a desired wireframe
-- Understanding the CSS box model and inspecting other websites to improve CSS skills
-- Uploading an HTML page to GitHub repository and deploying to a cloud platform
- -->
